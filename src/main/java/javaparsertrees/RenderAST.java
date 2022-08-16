@@ -28,7 +28,7 @@ public class RenderAST {
 			//System.out.println(dot);
 			
 			MutableGraph g = new Parser().read(dot);
-		    Graphviz.fromGraph(g).width(2000).render(Format.PNG).toFile(new File(args[0] + ".png"));
+		    Graphviz.fromGraph(g).width(4000).render(Format.PNG).toFile(new File(args[0] + ".png"));
 			
 		} catch (Exception e) {
 			System.err.println("Error finding or parsing " + args[0]);
